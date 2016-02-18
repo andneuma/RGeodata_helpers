@@ -2,12 +2,18 @@
 #
 # Add Country Codes to list of input country names using countrycodes_data
 #
+# Input: list of country names ("character")
+# Output: data frame with (country name (opt), corrected country name (opt), country codes*)
+#
 # TODO
 # + countrycode_data remains in enviroment
 # + Implement some Unit testing
-# + Transform for-loop-solution to a more vectorized one
+# + Transform for-loop-solution to a more vectorized one (nicer to read, more preformant)
+#
+# Written by Andreas Neumann (andneuma@posteo.de), https://github.com/andneuma/RGeodata_helpers
 #
 ######################################################################
+
 require(dplyr)
 require(magrittr)
 require(countrycode)
